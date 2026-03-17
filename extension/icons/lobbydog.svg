@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#1e3a5f"/>
+
+  <!-- Dog face -->
+  <ellipse cx="64" cy="72" rx="28" ry="24" fill="#c8a87c"/>
+
+  <!-- Ears -->
+  <ellipse cx="38" cy="52" rx="12" ry="18" fill="#a0845c" transform="rotate(-15 38 52)"/>
+  <ellipse cx="90" cy="52" rx="12" ry="18" fill="#a0845c" transform="rotate(15 90 52)"/>
+
+  <!-- Inner ears -->
+  <ellipse cx="38" cy="54" rx="7" ry="11" fill="#d4b896" transform="rotate(-15 38 54)"/>
+  <ellipse cx="90" cy="54" rx="7" ry="11" fill="#d4b896" transform="rotate(15 90 54)"/>
+
+  <!-- Eyes -->
+  <ellipse cx="52" cy="66" rx="5" ry="5.5" fill="white"/>
+  <ellipse cx="76" cy="66" rx="5" ry="5.5" fill="white"/>
+  <circle cx="53" cy="65.5" r="3" fill="#2d1b00"/>
+  <circle cx="77" cy="65.5" r="3" fill="#2d1b00"/>
+  <!-- Eye shine -->
+  <circle cx="54.5" cy="64" r="1.2" fill="white"/>
+  <circle cx="78.5" cy="64" r="1.2" fill="white"/>
+
+  <!-- Nose -->
+  <ellipse cx="64" cy="76" rx="5" ry="3.5" fill="#2d1b00"/>
+  <!-- Nose shine -->
+  <ellipse cx="62.5" cy="75" rx="1.5" ry="1" fill="#5a3d1a" opacity="0.5"/>
+
+  <!-- Mouth -->
+  <path d="M59 79 Q64 84 69 79" fill="none" stroke="#2d1b00" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Snout area -->
+  <ellipse cx="64" cy="76" rx="12" ry="8" fill="#d4b896" opacity="0.5"/>
+
+  <!-- Detective hat -->
+  <path d="M30 55 Q32 38 64 32 Q96 38 98 55 L88 52 Q64 46 40 52 Z" fill="#3d5a3d"/>
+  <!-- Hat brim -->
+  <path d="M26 56 Q64 48 102 56 Q64 60 26 56 Z" fill="#2d4a2d"/>
+  <!-- Hat band -->
+  <path d="M34 52 Q64 46 94 52" fill="none" stroke="#c8a020" stroke-width="2"/>
+
+  <!-- Magnifying glass -->
+  <!-- Handle -->
+  <line x1="95" y1="90" x2="108" y2="103" stroke="#8b7355" stroke-width="4" stroke-linecap="round"/>
+  <!-- Glass ring -->
+  <circle cx="90" cy="85" r="14" fill="none" stroke="#b8960c" stroke-width="3.5"/>
+  <!-- Glass fill -->
+  <circle cx="90" cy="85" r="12" fill="#d0e8ff" opacity="0.35"/>
+  <!-- Glass shine -->
+  <path d="M83 79 Q86 76 91 78" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

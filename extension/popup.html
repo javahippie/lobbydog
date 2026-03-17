@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 320px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px;
+      color: #1f2937;
+      background: #ffffff;
+    }
+    .header {
+      padding: 16px;
+      background: #1e3a5f;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header h1 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .header .logo {
+      width: 32px;
+      height: 32px;
+    }
+    .content {
+      padding: 16px;
+    }
+    .stat {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .stat:last-child {
+      border-bottom: none;
+    }
+    .stat-label {
+      color: #6b7280;
+      font-size: 13px;
+    }
+    .stat-value {
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .actions {
+      padding: 12px 16px;
+      border-top: 1px solid #e5e7eb;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #1e3a5f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    button:hover {
+      background: #2d5a8e;
+    }
+    button:disabled {
+      background: #9ca3af;
+      cursor: not-allowed;
+    }
+    .footer {
+      padding: 8px 16px 12px;
+      text-align: center;
+      font-size: 11px;
+      color: #9ca3af;
+    }
+    .footer a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    .status-dot.active { background: #22c55e; }
+    .status-dot.stale { background: #f59e0b; }
+    .status-dot.empty { background: #ef4444; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="icons/lobbydog.svg" alt="LobbyDog" width="32" height="32">
+    <h1>LobbyDog</h1>
+  </div>
+  <div class="content">
+    <div class="stat">
+      <span class="stat-label">Status</span>
+      <span class="stat-value" id="status">
+        <span class="status-dot empty"></span>Lade...
+      </span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Namen im Index</span>
+      <span class="stat-value" id="nameCount">-</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Letzte Aktualisierung</span>
+      <span class="stat-value" id="lastUpdated">-</span>
+    </div>
+  </div>
+  <div class="actions">
+    <button id="refreshBtn">Index aktualisieren</button>
+  </div>
+  <div class="footer">
+    Daten: <a href="https://www.lobbyregister.bundestag.de" target="_blank">Lobbyregister des Bundestags</a>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
