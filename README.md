@@ -59,8 +59,4 @@ Der Index wird als statische JSON-Datei gehostet und von der Erweiterung herunte
 
 ## Datenquelle
 
-[Lobbyregister des Deutschen Bundestags](https://www.lobbyregister.bundestag.de) — öffentliche Verwaltungsdaten gemäß § 4 LobbyRG.
-
-## Lizenz
-
-MIT
+[Lobbyregister des Deutschen Bundestags](https://www.lobbyregister.bundestag.de) — öffentliche Verwaltungsdaten gemäß § 4 LobbyRG
